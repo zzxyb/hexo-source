@@ -1,0 +1,50 @@
+@startuml xdg_desktop_portal
+
+skin rose
+title "Author: Xiao YaoBing \n Email:xiaoyaobing@uniontech.com"
+
+class Application {
+  - appName: String
+  - permissionsRequested: List<String>
+  + requestsPermission(permission: String): void
+}
+
+class Portal {
+}
+
+class DesktopEnvironment {
+  - portals: List<Portal>
+  + requestPermission(application: Application, permission: String): void
+}
+
+class User {
+  - userID: String
+  - username: String
+}
+
+class FilePortal {
+  + requestFilePermission(application: Application, path: String): void
+  + getFilePermissions(user: User): List<String>
+}
+
+class CameraPortal {
+  + requestCameraPermission(application: Application, cameraID: String): void
+  + getCameraPermissions(user: User): List<String>
+}
+
+Application  -->  Portal : requests
+DesktopEnvironment --> Portal : handles
+Portal <|-- FilePortal
+Portal <|-- CameraPortal
+
+FilePortal  --  Permission : has
+CameraPortal  --  Permission : has
+
+class Permission {
+  - permissionName: String
+  - permissionType: String
+  - granted: boolean
+  + isGrantedByUser(user: User): boolean
+}
+
+@enduml
