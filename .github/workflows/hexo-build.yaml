@@ -50,11 +50,11 @@ jobs:
           git config --global user.name "YaoBing Xiao"
           git config --global user.email "xiaoyaobing1994@gmail.com"
 
-      - name: Generate Hexo site
-        run: npx hexo generate
+      - name: Clean Hexo site
+        run: npx hexo clean
 
       - name: Generate Hexo site
-        run: npx hexo clean
+        run: npx hexo generate
 
       - name: Deploy hexo
         run: |
