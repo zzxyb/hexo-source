@@ -39,12 +39,6 @@ jobs:
       - name: Install Hexo
         run: npm install hexo-cli -g
 
-      - name: Generate Hexo site
-        run: npx hexo generate
-
-      - name: Generate Hexo site
-        run: npx hexo clean
-
       - name: Configuration environment
         env:
           HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
@@ -55,6 +49,12 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name "YaoBing Xiao"
           git config --global user.email "xiaoyaobing1994@gmail.com"
+
+      - name: Generate Hexo site
+        run: npx hexo generate
+
+      - name: Generate Hexo site
+        run: npx hexo clean
 
       - name: Deploy hexo
         run: |
