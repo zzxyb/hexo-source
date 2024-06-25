@@ -18,9 +18,8 @@ categories:
 ## 技术框架
 - [treeland初始化](../treeland-init)
 - [Qt QPA框架对接](../wl-qpa-bridge)
-- [鼠标事件处理](../pointer-event)
-- [键盘事件处理](../keyboard-event)
-- [drm送显分析](../drm-commit)
-- [显示器初始化和热插拔](../monitor-init-hotplug)
+- [鼠标事件处理](../event)
+- [显示器设备分析](../monitor-init-hotplug)
 - [输入设备初始化和热插拔](../inputdevice-init-hotplug)
 - [窗口显示](../surface-init-update)
+- [drm送显分析](../drm-commit)

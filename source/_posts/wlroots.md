@@ -30,6 +30,8 @@ wlroots的设计哲学是模块化和简洁。它将不同的功能分离到独�
 - wlr_backend：提供对不同底层系统（如 DRM、X11、Wayland、Headless等）的支持。
 - wlr_surface：表示可显示的表面，通常是窗口的基本单位。
 
+框架图下如下：
+![1.1 wlroots框架图](/img/wlroots/wlroots.drawio.svg)
 ## 使用场景
 - wlroots主要用于开发Wayland显示服务器和窗口管理器，典型的使用场景包括：
 - 自定义窗口管理器：开发者可以利用 wlroots 快速构建具有自定义功能的窗口管理器。
