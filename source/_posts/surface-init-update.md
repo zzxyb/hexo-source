@@ -9,6 +9,6 @@ categories:
   - treeland
 ---
 
-![1.1 treeland初始化流程](/img/treeland/surface-update.drawio.svg)
+![1.1 treeland surface初始化流程](/img/treeland/surface-update.drawio.svg)
 
-![1.1 treeland初始化流程](/img/treeland/surface-update.drawio.svg)
+![1.1 treeland surface更新流程](/img/treeland/surface-update.drawio.svg)
