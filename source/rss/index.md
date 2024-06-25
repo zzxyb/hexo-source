@@ -7,7 +7,7 @@ date: 2023-11-02 14:04:08
 
 | 项目       | 描述  |
 | ---------- | ----- |
-| wsm | 一个使用wlroots写的wayland合成器，暂未开源，如果有兴趣可以联系我 |
+| [<span style="color: blue;">wsm</span>](https://github.com/zzxyb/wsm) | 一个使基于wlroots写的wayland合成器，Lychee桌面环境默认的合成器 |
 | [<span style="color: blue;">wlscenegraph</span>](https://github.com/zzxyb/wlscenegraph) | Wayland场景渲染库，为wsm提供开箱即用图形渲染和动画等功能 |
 | [<span style="color: blue;">wsmwayland</span>](https://github.com/zzxyb/wsmwayland) | 基于wsm的全量协议，提供一个Qt、qml风格的Wayland协议客户端封装 |
 | [<span style="color: blue;">lychee-qt6-plugins</span>](https://github.com/zzxyb/lychee-qt6-plugins) | lychee桌面环境下qt的QPA插件 |

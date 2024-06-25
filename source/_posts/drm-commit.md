@@ -9,4 +9,4 @@ categories:
   - treeland
 ---
 
-![1.1 treeland初始化流程](/img/treeland/drm-commit.drawio.svg)
+![1.1 treeland送显流程流程](/img/treeland/drm-commit.drawio.svg)
